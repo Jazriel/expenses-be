@@ -64,7 +64,8 @@ app.delete('/expressions/:id', async (req, res, next) => {
 
 
 //define google cloud function name
-export const webApi = functions.https.onRequest(app);
+// this is not secure so let's not do it
+// export const webApi = functions.https.onRequest(app);
 
 
 const expensesCollection = `expenses`;
